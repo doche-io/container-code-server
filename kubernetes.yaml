@@ -11,7 +11,7 @@ spec:
     metadata:
       labels:
         app: code-server
-    spce:
+    spec:
       containers:
       - name: code-server
         image: docheio/code-server:latest
