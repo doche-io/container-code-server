@@ -15,6 +15,9 @@ spec:
       containers:
       - name: code-server
         image: docheio/code-server:latest
+        env:
+        - name: PASSWORD
+          value: PaS3w0rd
         ports:
         - name: tcp8080
           containerPort: 8080
