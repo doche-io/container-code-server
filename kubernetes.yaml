@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: code-server
-        image: docheio/code-server:latest
+        image: ghcr.io/docheio/container-code-server:main
         env:
         - name: PASSWORD
           value: PaS3w0rd
