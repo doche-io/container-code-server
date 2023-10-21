@@ -13,7 +13,6 @@
 VERSION=$(curl https://api.github.com/repos/coder/code-server/releases/latest  -s | jq .name -r | sed -e s/v//g)
 
 echo -e "$(date --utc +[%Y-%m-%dT%H:%M:%S.%3NZ]) info  Installing requirements packages"
-pacman --noconfirm -Syyu rpm nodejs
 
 echo -e "$(date --utc +[%Y-%m-%dT%H:%M:%S.%3NZ]) info  Installing code-server\033[0m"
 rpm -i https://github.com/coder/code-server/releases/download/v${VERSION}/code-server-${VERSION}-amd64.rpm
