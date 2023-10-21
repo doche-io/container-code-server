@@ -19,4 +19,4 @@ RUN 	pacman --noconfirm -S rpm
 RUN 	pacman --noconfirm -S git
 RUN 	pacman --noconfirm -S openssh
 RUN 	pacman --noconfirm -S jq
-CMD		bash -c /tmp/init.sh
+CMD 	bash -c /tmp/init.sh
