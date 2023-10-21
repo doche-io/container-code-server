@@ -12,8 +12,8 @@
 
 FROM	archlinux:latest
 COPY	./init.sh /tmp/init.sh
-RUN		chmod +x /tmp/init.sh
-RUN		echo 'Server = https://mirror.cat.net/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist 
+RUN 	chmod +x /tmp/init.sh
+RUN 	echo 'Server = https://mirror.cat.net/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist 
 RUN 	pacman --noconfirm -Syyu
 RUN 	pacman --noconfirm -S rpm
 RUN 	pacman --noconfirm -S git
